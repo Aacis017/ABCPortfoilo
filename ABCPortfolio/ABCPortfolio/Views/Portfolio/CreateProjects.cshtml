@@ -1,0 +1,49 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model ABCPortfolio.Models.Projects
+<div class="container">
+    <div class="row">
+
+        <div class="column">
+
+            <form enctype="multipart/form-data" asp-action="AddProjectDetails" method="post">
+
+                <div asp-validation-summary="All" class="text-danger"></div>
+
+                <div class="mb-3">
+                    <label class="form-label" asp-for="YearsOfOperation">Years Of Operation</label>
+                    <input type="number" class="form-control" placeholder="Enter Years Of Operation" asp-for="YearsOfOperation" />
+                    <span asp-validation-for="YearsOfOperation" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" asp-for="NoOfSatisfiedClients">Number of Satisfied Clients</label>
+                    <input type="number" class="form-control" placeholder="Enter Number of Satisfied Clients" asp-for="NoOfSatisfiedClients" />
+                    <span asp-validation-for="NoOfSatisfiedClients" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" asp-for="NoOfProjectsDelivered">Number of Projects Delivered</label>
+                    <input type="number" class="form-control" placeholder="Enter Number of Projects Delivered " asp-for="NoOfProjectsDelivered" />
+                    <span asp-validation-for="NoOfProjectsDelivered" class="text-danger"></span>
+                </div
+                 <div class="mb-3">
+                    <label class="form-label" asp-for="NoOfExperts"> Number of Experts</label>
+                    <input type="number" class="form-control" placeholder="Enter Number of Experts " asp-for="NoOfExperts" />
+                    <span asp-validation-for="NoOfExperts" class="text-danger"></span>
+                </div>
+                 <button style="margin-top:15px" type="submit" class="btn btn-primary">Submit</button>
+
+
+            </form>
+        </div>
+    </div>
+</div>
+                
+

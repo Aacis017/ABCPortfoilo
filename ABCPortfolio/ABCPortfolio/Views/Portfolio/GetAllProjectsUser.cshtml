@@ -1,0 +1,96 @@
+﻿@model AboutUsViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<div style="text-align:center; margin-top:100px">
+    <h3>Our Mission</h3>
+    <h5 style="color:blue">Talented people, working together</h5>
+<pre style="background-color:lightgreen">Our mission is to enable people anywhere to solve big problems. 
+     Our customers choose us because we help innovate 
+     and adapt faster with world-class engineers and product engineering practices.
+
+     We are fanatics of how to design, build, and validate new ideas in better ways.
+     RiddhaSoft combine those learnings with an unwavering dedication to customer 
+     success to foster long-lasting impact for businesses and the people they serve.
+ </pre>
+</div>
+
+
+<table style="background-color:navajowhite; margin:auto">
+    <thead>
+        <tr>
+            <th style="padding-right: 30px;">Years Of Operation</th>
+            <th style="padding-right: 30px;"> Satisfied Clients</th>
+            <th style="padding-right: 30px;"> Projects Delivered</th>
+            <th> Experts</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+
+        <tr>
+            <td>@Model.projects.YearsOfOperation</td>
+
+            <td>@Model.projects.NoOfSatisfiedClients</td>
+            <td>@Model.projects.NoOfProjectsDelivered</td>
+            <td>@Model.projects.NoOfExperts</td>
+        </tr>
+
+    </tbody>
+</table>
+@{
+    ViewData["Title"] = "Our Teams";
+}
+
+<style>
+    .team-list {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+        background-color: lightyellow;
+    }
+
+    .team-item {
+        width: 30%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+        .team-item h3 {
+            margin-top: 0;
+        }
+
+        .team-item img {
+            max-width: 200px;
+            max-height: 200px;
+        }
+</style>
+
+
+
+<h4 style="text-align:center; margin-top:100px;color:orangered">Our Teams</h4>
+<ul class="team-list">
+    @foreach (var item in Model.teams)
+    {
+
+        {
+            <li class="team-item">
+                <img src="~/Upload/@item.ImagePath" alt="Team Image" style="margin-top:100px" />
+                <div class="team-details">
+                    <h3>@item.Name</h3>
+                    <p>@item.Post</p>
+                </div>
+                 
+
+
+            </li>
+        }
+    }
+</ul>
+
+

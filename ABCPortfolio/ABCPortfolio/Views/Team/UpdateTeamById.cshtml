@@ -1,0 +1,14 @@
+﻿@model ABCPortfolio.Models.Team
+ 
+<h1>Team Details</h1>
+
+<div>
+    <h5>Id: @Model.Id</h5>
+    <h5>Name: @Model.Name</h5>
+    <h5>Post: @Model.Post</h5>
+    <img src="~/Upload/@Model.ImagePath" alt="Team Image" />
+</div>
+ 
+
+<form asp-controller="Team" asp-action="UpdateTeamById" method="post"/>
+

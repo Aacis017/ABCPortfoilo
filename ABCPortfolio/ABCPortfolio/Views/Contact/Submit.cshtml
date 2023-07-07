@@ -1,0 +1,173 @@
+﻿@model ContactUsViewModel
+
+@{
+    ViewBag.Title ="Contact Us";
+}
+
+
+<!-- ======================================== PAGE HEADER ======================================== -->
+<section id="pageHeader">
+    <div class="overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="txt text-center">
+                        <div class="sec-header">
+                            <h2>CONTACT US<span>.</span></h2>
+                            <p><a  asp-controller="Home" asp-action="Index">HOME</a> <span>/</span> CONTACT US</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======================================== CONTACT SECTION ======================================== -->
+
+<section id="contactSection">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="part1">
+                    <div class="sec-header">
+                        <h2>WE ARE ALWAYS HERE TO HELP YOU<span>.</span></h2>
+                        <p>There are many variatns of passages the majority have suffered alteration in some foor randomised words believable.</p>
+                    </div>
+                    <div class="icon-box wow fadeInLeftBig" data-wow-duration="1.5s">
+                        <div class="icon">
+                            <i class="fal fa-map-marker-alt"></i>
+                        </div>
+                        <div class="txt">
+                            <p>VISIT US</p>
+                            <span>Thapagaun, Kathmandu. Nepal</span>
+                        </div>
+                    </div>
+                    <div class="icon-box wow fadeInLeftBig" data-wow-duration="1.5s">
+                        <div class="icon">
+                            <i class="fal fa-envelope"></i>
+                        </div>
+                        <div class="txt">
+                            <p>EMAIL ADDRESS</p>
+                            <span>contact@riddhasoft.com</span>
+                        </div>
+                    </div>
+                    <div class="icon-box mb-0 wow fadeInLeftBig" data-wow-duration="1.5s">
+                        <div class="icon">
+                            <i class="fal fa-phone-alt"></i>
+                        </div>
+                        <div class="txt">
+                            <p>CALL NOW</p>
+                            <span>01934565397</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <form asp-action="Submit" class="wow fadeInUpBig shadow p-3 mb-5 bg-white rounded" data-wow-duration="1.5s">
+                    <div class="form-row">
+                       <div class="d-flex flex-row justify-content-between">
+                            <div class="form-group w-50 m-1">
+                                <input type="text" class="form-control" placeholder="Your Name" asp-for="Name">
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                            <div class="form-group w-50 m-1">
+                                <input type="email" class="form-control" placeholder="Email Address" asp-for="Email">
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                       </div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="form-group w-50 inline-block m-1">
+                                <input type="number" class="form-control" placeholder="Phone Number" asp-for="PhoneNo">
+                                <span asp-validation-for="PhoneNo" class="text-danger"></span>
+                            </div>
+                            <div class="form-group w-50 m-1">
+                                <select class="form-control form-control-lg" asp-for="ServiceType" asp-items="ViewBag.ServiceType">
+                                    <option style="display:none;" selected>Select Services</option>
+                                </select>
+
+                                <span asp-validation-for="ServiceType" class="text-danger"></span>
+                            </div>
+                        </div>
+                       
+                        <div class="form-group col-12">
+                            <textarea class="form-control" rows="8" cols="80" placeholder="Write Message" asp-for="Message"></textarea>
+                            <span asp-validation-for="Message" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn layer-btn">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======================================== GOOGLE MAP ======================================== -->
+
+<section id="googleMap">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div style="width: 100%">
+                    <iframe width="1200" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=800&amp;height=560&amp;hl=en&amp;q=riddhasoft+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        <a href="https://www.maps.ie/distance-area-calculator.html">measure distance on map</a>
+                        </iframe>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@*<h1 class="text-secondary text-center">Contact <span class="text-primary">Us</span></h1>
+
+
+<div class="row">
+     <div class="col-md-6">
+        <img src="~/images/contactus.jpg"  class="img-fluid"  />
+    </div> 
+
+    <div class="col-md-6 justify-content-end flex-grow-1">
+        <div class="container container-fluid ">
+            <form asp-action="Submit" class="shadow p-3 mb-5 bg-white rounded">
+        
+            
+
+            <div class="mb-3">
+                <label class="form-label" asp-for="Name">Name</label>
+                <input type="text" asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" asp-for="Email">Email Address</label>
+                <input type="email" asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" asp-for="Services">Services</label>
+                <input type="text" asp-for="Services" class="form-control" />
+                <span asp-validation-for="Services" class="text-danger"></span>
+
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" asp-for="PhoneNo">PhoneNo</label>
+                <input type="text" asp-for="PhoneNo" class="form-control" />
+                <span asp-validation-for="PhoneNo" class="text-danger"></span>
+
+            </div>
+            <div class="mb-3">
+                <label class="form-label " asp-for="Message">Message</label>
+                <textarea asp-for="Message" class="form-control md-textarea"></textarea>
+                <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <input type="submit" class="btn btn-primary" value="Submit" />
+            </div>
+
+        </form>
+        </div>
+    </div>
+
+</div>*@

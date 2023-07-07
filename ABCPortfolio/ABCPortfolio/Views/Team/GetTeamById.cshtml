@@ -1,0 +1,90 @@
+﻿
+@model ABCPortfolio.ViewModel.UpdateTeamViewModel
+
+<section id="pageHeader">
+    <div class="overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="txt text-center">
+                        <div class="sec-header">
+                            <h2>Team Details<span>.</span></h2>
+                            <p><a asp-action="Index" asp-controller="Home">HOME</a> <span>/</span>Team Details</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div>
+    <h5>Id: @Model.Id</h5>
+    <h5>Name: @Model.Name</h5>
+    <h5>Post: @Model.Post</h5>
+    <img src="~/Upload/@Model.ExistingImagePath" alt="Team Image" style="max-width:200px" />
+</div>
+
+<hr />
+
+
+
+@*<form asp-controller="Team" asp-action="UpdateTeamById" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="Name">Name</label>
+        <input type="text" class="form-control" asp-for="Name" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Post">Post</label>
+        <input type="text" class="form-control" asp-for="Post" />
+        <span asp-validation-for="Post" class="text-danger"></span>
+    </div>
+
+   
+    <div class="form-group">
+        <label asp-for="NewImage">Image</label>
+        <input type="file" class="form-control-file" asp-for="NewImage" />
+        <span asp-validation-for="NewImage" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+
+<a asp-controller="Team" asp-action="GetAllTeam">Back to Team List</a>
+
+ *@
+<h2>Edit Team</h2>
+
+<form asp-controller="Team" asp-action="UpdateTeamById" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="Name">Name</label>
+        <input type="text" class="form-control" asp-for="Name" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Post">Post</label>
+        <input type="text" class="form-control" asp-for="Post" />
+        <span asp-validation-for="Post" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Existing Image</label>
+        <img src="~/Upload/@Model.ExistingImagePath" alt="Existing Image" style="max-width: 200px" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NewImage">Image</label>
+        <input type="file" class="form-control-file" asp-for="NewImage" />
+        <span asp-validation-for="NewImage" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>

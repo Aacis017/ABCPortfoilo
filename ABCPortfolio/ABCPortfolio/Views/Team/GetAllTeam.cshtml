@@ -1,0 +1,89 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@model List<ABCPortfolio.Models.Team>
+
+
+
+
+
+
+<section id="pageHeader">
+    <div class="overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="txt text-center">
+                        <div class="sec-header">
+                            <h2>Our Teams<span>.</span></h2>
+                            <p><a asp-action="Index" asp-controller="Home">HOME</a> <span>/</span> Our Teams</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+@{
+    ViewData["Title"] = "Our Teams";
+}
+
+<style>
+    .team-list {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .team-item {
+        width: 30%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+        .team-item h3 {
+            margin-top: 0;
+        }
+
+        .team-item img {
+            max-width: 200px;
+            max-height: 200px;
+        }
+</style>
+
+
+
+ 
+
+    @foreach (var team in Model)
+    {
+        <li class="team-item">
+            <img src="~/Upload/@team.ImagePath" alt="Team Image" />
+            <div class="team-details">
+                <h3>@team.Name</h3>
+                <p>@team.Post</p>
+            </div>
+            @if (User.Identity.IsAuthenticated )
+            {
+                <div class="delete-link">
+                    <a href="RemoveTeamById/@team.Id">Delete</a>
+                </div>
+                <div class="view-link">
+                    <a href="@Url.Action("GetTeamById", "Team", new { id = team.Id })">View</a>
+                </div>
+
+
+
+
+            }
+        </li>
+    }
+
+
+

@@ -1,0 +1,54 @@
+﻿@model IEnumerable<JobVM>
+
+@{
+    ViewBag.Title = "Career";
+}
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<!-- ======================================== PAGE HEADER ======================================== -->
+
+
+
+
+
+<div class="career container">
+    <div class="career_slider mb-5" >
+        <img src="https://img.freepik.com/premium-vector/career-website-banner-concept-with-thin-line-flat-design_56103-101.jpg" alt="Image" style="height:40vh; width:80vw; opacity:.6; object-fit:cover;" />
+    </div>
+    <div class="slogan row justify-content-center mt-4 mb-5">
+        <div class=" margin-auto col-8 text-align-center" style="overflow: hidden">
+            <h5>Become a part of our big family to inspire and get inspired by <br /> <span style="color:red">professional experts.</span> </h5>
+
+        </div>
+    </div>
+
+    @foreach(var item in Model)
+    {
+        string photoPath = "/JobImage/" + item.ImagePath;
+        <div class="row ">
+            <div class="col-4 jobs">
+                <h4 class="mb-4">Jobs Title</h4>
+                <div>
+                    <h2>@item.Title</h2>
+                </div>
+                <div class="image">
+                    <img src="@photoPath" alt="images" style="width:100%" />
+                </div>
+            </div>
+            <div class=" col-8 requirement">
+                <h4 class="mb-4">Requirement</h4>
+                <div>
+                    <ul>
+                        @foreach(var qua in item.Qualification)
+                        {
+                            <li>@qua.QualificationText</li>
+                        }
+                       
+                   </ul>
+                </div>
+            </div>
+        </div>
+    }
+  
+</div>
