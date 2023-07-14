@@ -11136,6 +11136,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProjectsPhotos\068d1c3b-c0a5-40bc-a5a2-6fc4e15a86ed_Admin-Profile-Vector-PNG-File.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProjectsPhotos\06d72d03-68b2-40e9-9567-521d8d284669_Admin-Profile-Vector-PNG-File.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ABCPortfolio</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ABCPortfolio</BasePath>
+      <RelativePath>ProjectsPhotos/06d72d03-68b2-40e9-9567-521d8d284669_Admin-Profile-Vector-PNG-File.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProjectsPhotos\06d72d03-68b2-40e9-9567-521d8d284669_Admin-Profile-Vector-PNG-File.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProjectsPhotos\07a08518-f607-4d05-a9b5-1149b8e05ef8_Admin-Profile-Vector-PNG-File.png))">
       <SourceType>Package</SourceType>
       <SourceId>ABCPortfolio</SourceId>

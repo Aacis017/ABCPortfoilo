@@ -1,5 +1,6 @@
 W:\Riddha\ABCPortfolio\ABCPortfolio\ABCPortfolio\bin\Debug\net7.0\appsettings.Development.json
 W:\Riddha\ABCPortfolio\ABCPortfolio\ABCPortfolio\bin\Debug\net7.0\appsettings.json
+W:\Riddha\ABCPortfolio\ABCPortfolio\ABCPortfolio\bin\Debug\net7.0\libman.json
 W:\Riddha\ABCPortfolio\ABCPortfolio\ABCPortfolio\bin\Debug\net7.0\ABCPortfolio.staticwebassets.runtime.json
 W:\Riddha\ABCPortfolio\ABCPortfolio\ABCPortfolio\bin\Debug\net7.0\ABCPortfolio.exe
 W:\Riddha\ABCPortfolio\ABCPortfolio\ABCPortfolio\bin\Debug\net7.0\ABCPortfolio.deps.json
@@ -556,4 +557,3 @@ W:\Riddha\ABCPortfolio\ABCPortfolio\ABCPortfolio\obj\Debug\net7.0\refint\ABCPort
 W:\Riddha\ABCPortfolio\ABCPortfolio\ABCPortfolio\obj\Debug\net7.0\ABCPortfolio.pdb
 W:\Riddha\ABCPortfolio\ABCPortfolio\ABCPortfolio\obj\Debug\net7.0\ABCPortfolio.genruntimeconfig.cache
 W:\Riddha\ABCPortfolio\ABCPortfolio\ABCPortfolio\obj\Debug\net7.0\ref\ABCPortfolio.dll
-W:\Riddha\ABCPortfolio\ABCPortfolio\ABCPortfolio\bin\Debug\net7.0\libman.json

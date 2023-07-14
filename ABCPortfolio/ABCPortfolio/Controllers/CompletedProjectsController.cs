@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using ABCPortfolio.ViewModel;
 using ABCPortfolio.Models;
 using ABCPortfolio.Data;
+using Microsoft.AspNetCore.Authorization;
 
 public class CompletedProjectsController : Controller
    
@@ -48,6 +49,7 @@ public class CompletedProjectsController : Controller
         return View(model);
     }
 
+    [Authorize]
     // GET: CompletedProjects/Create
     public IActionResult Create()
     {
@@ -55,6 +57,8 @@ public class CompletedProjectsController : Controller
     }
 
     // POST: CompletedProjects/Create
+    [Authorize]
+
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create(CompletedProjectsVM model)

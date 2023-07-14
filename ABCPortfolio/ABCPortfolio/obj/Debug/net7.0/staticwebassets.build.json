@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "t4L8Qds1BX3HF8beTb0PljMxSsmk12VLR3QjyjP+arM=",
+  "Hash": "DDUI7nd4rr+r0w5DdhIdiirWOQXBuXhexoRIltTfpfI=",
   "Source": "ABCPortfolio",
   "BasePath": "_content/ABCPortfolio",
   "Mode": "Default",
@@ -11915,6 +11915,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ProjectsPhotos\\068d1c3b-c0a5-40bc-a5a2-6fc4e15a86ed_Admin-Profile-Vector-PNG-File.png"
+    },
+    {
+      "Identity": "W:\\Riddha\\ABCPortfolio\\ABCPortfolio\\ABCPortfolio\\wwwroot\\ProjectsPhotos\\06d72d03-68b2-40e9-9567-521d8d284669_Admin-Profile-Vector-PNG-File.png",
+      "SourceId": "ABCPortfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "W:\\Riddha\\ABCPortfolio\\ABCPortfolio\\ABCPortfolio\\wwwroot\\",
+      "BasePath": "_content/ABCPortfolio",
+      "RelativePath": "ProjectsPhotos/06d72d03-68b2-40e9-9567-521d8d284669_Admin-Profile-Vector-PNG-File.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectsPhotos\\06d72d03-68b2-40e9-9567-521d8d284669_Admin-Profile-Vector-PNG-File.png"
     },
     {
       "Identity": "W:\\Riddha\\ABCPortfolio\\ABCPortfolio\\ABCPortfolio\\wwwroot\\ProjectsPhotos\\07a08518-f607-4d05-a9b5-1149b8e05ef8_Admin-Profile-Vector-PNG-File.png",
